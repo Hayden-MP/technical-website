@@ -4,10 +4,12 @@ html {
 
 body {
     padding: 30px;
+    background-color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .container {
-    background-color: bisque;
+    /*background-color: bisque;*/
     width: 800px;
     height: 800px;
     margin: auto;
@@ -15,17 +17,9 @@ body {
 }
 
 .left-column {
+    /*background-color: brown;*/
     float: left;
     width: 30%;
-}
-
-.sidebar {
-    background-color: brown;
-    height: 85%;
-}
-
-#social-links {
-    padding-left: 20%;
 }
 
 .headshot {
@@ -33,35 +27,39 @@ body {
     border-radius: 50%;
 }
 
-.icon-text {
-    display: inline;
+h1, .self-title {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
+.self-title {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.link-container {
+    margin-left: 40%;
+    margin-bottom: 10px;
+}
 .right-column {
-    background-color: lightskyblue;
+    /*background-color: lightskyblue;*/
     float: right;
     width: 70%;
     height: 100%;
 }
 
 .navbar {
-    background-color: beige;
+    border-bottom: 2px solid black;
 }
 
 .nav-btns {
-    margin: 20px 20px 8px 20px;
+    margin: 20px 20px 12px 20px;
     background: none;
     font-size: 16px;
     height: 50px;
     width: 90px;
-}
-
-.nav-btns:hover {
-    color: orange;
-}
-
-.nav-btns:active {
-    color: purple;
+    cursor: pointer;
 }
 
 #projects-content,
@@ -69,6 +67,15 @@ body {
 #resume-content
 {
     display: none;
+}
+
+#intro-btn {
+    background: darkmagenta;
+    color: white;
+}
+
+.content-container {
+    padding-left: 15px;
 }
 
 
