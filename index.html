@@ -1,12 +1,103 @@
+<!doctype html>
 <html lang="en">
+
+<!--
+WRITTEN BY: Hayden Powers
+EMAIL: hmpowers86@gmail.com
+-->
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="utf-8">
+  <meta name="author" content="Hayden Powers">
+  <meta name="description" content="A portfolio website showcasing resume and projects.">
+   <!-- you would link to an external stylesheet here! -->
+   <link rel="stylesheet" href="styles.css">
+   <!-- you would also link to Bootstrap here! -->
+  <title>Hayden Powers</title>
 </head>
 <body>
-    <h1>This site is under construction.</h1>
-    <p>Please check back later (:</p>
+  <div class="container">
+
+    <!--BEGIN SIDEBAR-->
+    <div class="left-column sidebar">
+      <img class="headshot" src="./images/haydenp.jpg" alt="Portrait photo of Hayden Powers" width="200">
+      <h1>Hayden Powers</h1>
+      <h2>Student Full Stack Web Developer</h2> 
+      <aside id="social-links">
+        <section id="linkedin">
+          <a href="https://www.linkedin.com/in/hmpowers/" target="_blank">
+            <img class="icon" src="./images/linkedin-icon.png" alt="Linkedin page" width="40">
+            <p class="icon-text">LinkedIn</p>
+          </a>
+        </section>
+        <section id="github">
+          <a href="https://github.com/Hayden-MP" target="_blank">
+            <div>
+              <img class="icon" src="./images/github-icon.png" alt="Github page" width="40">
+              <p class="icon-text">Github</p>
+            </div>
+          </a>
+        </section>
+        <section id="twilio">
+          <a href="https://www.twilio.com/blog/author/hpowers" target="_blank">
+            <img src="./images/twilio-icon.png" alt="Twilio blog" width="40">
+            <p class="icon-text">Twilio Blog</p>
+          </a>
+        </section>
+      </aside>
+    </div>
+    <!--END SIDEBAR-->
+
+    <!--BEGIN RIGHT COLUMN-->
+    <div class="right-column">
+      <!--BEGIN NAVBAR-->
+      <div class="navbar">
+        <button class="nav-btns" id="intro-btn">Intro</button>
+        <button class="nav-btns" id="projects-btn">Projects</button>
+        <button class="nav-btns" id="art-btn">Art</button>
+        <button class="nav-btns" id="resume-btn">Resume</button>
+      </div>
+      <!--END NAVBAR-->
+
+      <!--BEGIN INTRO CONTENT-->
+      <div class="content-container" id="intro-content">
+        <section>
+          <h2>Intro</h2>
+
+        </section>
+      </div>
+      <!--END INTRO CONTENT-->
+
+      <!--BEGIN PROJECTS CONTENT-->
+      <div class="content-container" id="projects-content">
+        <section>
+          <h2>Projects</h2>
+
+        </section>
+      </div>
+      <!--END PROJECTS CONTENT-->
+
+      <!--BEGIN ART CONTENT-->
+      <div class="content-container" id="art-content">
+        <section>
+          <h2>Art</h2>
+
+        </section>
+      </div>
+      <!--END ART CONTENT-->
+
+      <!--BEGIN RESUME CONTENT-->
+      <div class="content-container" id="resume-content">
+        <section>
+          <h2>Resume</h2>
+
+        </section>
+      </div>
+      <!--END RESUME CONTENT-->
+    </div>
+    <!--END RIGHT COLUMN-->
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>

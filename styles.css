@@ -1,0 +1,76 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 30px;
+}
+
+.container {
+    background-color: bisque;
+    width: 800px;
+    height: 800px;
+    margin: auto;
+
+}
+
+.left-column {
+    float: left;
+    width: 30%;
+}
+
+.sidebar {
+    background-color: brown;
+    height: 85%;
+}
+
+#social-links {
+    padding-left: 20%;
+}
+
+.headshot {
+    margin: 30% 0 0 8%;
+    border-radius: 50%;
+}
+
+.icon-text {
+    display: inline;
+}
+
+.right-column {
+    background-color: lightskyblue;
+    float: right;
+    width: 70%;
+    height: 100%;
+}
+
+.navbar {
+    background-color: beige;
+}
+
+.nav-btns {
+    margin: 20px 20px 8px 20px;
+    background: none;
+    font-size: 16px;
+    height: 50px;
+    width: 90px;
+}
+
+.nav-btns:hover {
+    color: orange;
+}
+
+.nav-btns:active {
+    color: purple;
+}
+
+#projects-content,
+#art-content,
+#resume-content
+{
+    display: none;
+}
+
+
+
+
