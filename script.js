@@ -11,77 +11,46 @@ const projectsButton = document.getElementById("projects-btn")
 const artButton = document.getElementById("art-btn");
 const resumeButton = document.getElementById("resume-btn");
 
+// Lists to keep content organized
+const content = [introContent, projectsContent, artContent, resumeContent];
+const buttons = [introButton, projectsButton, artButton, resumeButton];
+
+// A function to cycle through the content and button styles
+function changeVisibility(activeContent, activeButton, contentArr, buttonsArr) {
+    // Since contentArr.length == buttonsArr.length, we can use one for-loop
+    for(i = 0; i < contentArr.length; i++) {
+
+        if(activeContent === contentArr[i]) {
+            contentArr[i].style.display = "block";
+        } else {
+            contentArr[i].style.display = "none";
+        }
+
+        if(activeButton === buttonsArr[i]) {
+            buttonsArr[i].style.background = "darkmagenta";
+            buttonsArr[i].style.color = "white";
+        } else {
+            buttonsArr[i].style.background = "white";
+            buttonsArr[i].style.color = "black";
+        }
+    }
+}
+
 // Buttons to control visibility of content
 introButton.onclick = () => {
-    introContent.style.display = "block";
-    introButton.style.background = "darkmagenta";
-    introButton.style.color = "white";
-
-    projectsContent.style.display = "none";
-    projectsButton.style.background = "none";
-    projectsButton.style.color = "black";
-
-    artContent.style.display = "none";
-    artButton.style.background = "none";
-    artButton.style.color = "black";
-
-    resumeContent.style.display = "none";
-    resumeButton.style.background = "none";
-    resumeButton.style.color = "black";
+    changeVisibility(introContent, introButton, content, buttons);
 }
 
 projectsButton.onclick = () => {
-    introContent.style.display = "none";
-    introButton.style.background = "none";
-    introButton.style.color = "black";
-
-    projectsContent.style.display = "block";
-    projectsButton.style.background = "darkmagenta";
-    projectsButton.style.color = "white";
-
-    artContent.style.display = "none";
-    artButton.style.background = "none";
-    artButton.style.color = "black";
-
-    resumeContent.style.display = "none";
-    resumeButton.style.background = "none";
-    resumeButton.style.color = "black";
+    changeVisibility(projectsContent, projectsButton, content, buttons);
 }
 
 artButton.onclick = () => {
-    introContent.style.display = "none";
-    introButton.style.background = "none";
-    introButton.style.color = "black";
-
-    projectsContent.style.display = "none";
-    projectsButton.style.background = "none";
-    projectsButton.style.color = "black";
-
-    artContent.style.display = "block";
-    artButton.style.background = "darkmagenta";
-    artButton.style.color = "white";
-
-    resumeContent.style.display = "none";
-    resumeButton.style.background = "none";
-    resumeButton.style.color = "black";
+    changeVisibility(artContent, artButton, content, buttons);
 }
 
 resumeButton.onclick = () => {
-    introContent.style.display = "none";
-    introButton.style.background = "none";
-    introButton.style.color = "black";
-
-    projectsContent.style.display = "none";
-    projectsButton.style.background = "none";
-    projectsButton.style.color = "black";
-
-    artContent.style.display = "none";
-    artButton.style.background = "none";
-    artButton.style.color = "black";
-
-    resumeContent.style.display = "block";
-    resumeButton.style.background = "darkmagenta";
-    resumeButton.style.color = "white";
+    changeVisibility(resumeContent, resumeButton, content, buttons);
 }
 
 

@@ -54,12 +54,16 @@ h1, .self-title {
 }
 
 .nav-btns {
-    margin: 20px 20px 12px 20px;
-    background: none;
+    margin: 20px 20px 16px 20px;
+    background: white;
     font-size: 16px;
     height: 50px;
     width: 90px;
     cursor: pointer;
+}
+
+.nav-btns:hover {
+    box-shadow: 4px 4px 4px 0 gray;
 }
 
 #projects-content,
