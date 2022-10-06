@@ -3,84 +3,240 @@ html {
 }
 
 body {
-    padding: 30px;
     background-color: aliceblue;
     font-family: 'Courier New', Courier, monospace;
 }
 
 .container {
-    /*background-color: bisque;*/
-    width: 800px;
-    height: 800px;
     margin: auto;
+}
+
+@media screen and (max-width: 640px) {
+    /* small screens */
+    .container {
+        text-align: center;
+    }
+
+    .sidebar {
+        text-align: center;
+    }
+
+    .headshot {
+        margin-top: 5%;
+        border-radius: 50%;
+    }
+
+    h1, .self-title {
+        font-size: 26px;
+        margin: 0;
+    }
+
+    .self-title {
+        font-size: 18px;
+        padding-bottom: 1em;
+    }
+
+    .link-container {
+        display: inline;
+    }
+
+    .icon-link:link {
+        text-decoration: none;
+    }
+
+    #social-links {
+        padding-bottom: 1em;
+    }
+
+    .navbar {
+        border-bottom: 2px solid black;
+    }
+
+    .nav-btns {
+        margin-bottom: 1em;
+        background: white;
+        font-size: 14px;
+        height: 28px;
+        width: 65px;
+        cursor: pointer;
+    }
+
+    .nav-btns:hover {
+        box-shadow: 4px 4px 4px 0 gray;
+    }
+    
+    #projects-content,
+    #art-content,
+    #resume-content
+    {
+        display: none;
+    }
+    
+    #intro-btn {
+        background: darkmagenta;
+        color: white;
+    }
+    
+    .content-container {
+        padding: 0 5% 5% 5%;
+        text-align: left;
+    }
+}    
+
+@media screen and (min-width: 640px) and (max-width: 1024px) {
+    /* medium screens */
+
+    .container {
+        text-align: center;
+    }
+
+    .sidebar {
+        text-align: center;
+    }
+
+    .headshot {
+        margin-top: 5%;
+        border-radius: 50%;
+    }
+
+    h1, .self-title {
+        font-size: 26px;
+        margin: 0;
+    }
+
+    .self-title {
+        font-size: 18px;
+        padding-bottom: 1em;
+    }
+
+    .link-container {
+        display: inline;
+    }
+
+    .icon-link:link {
+        text-decoration: none;
+    }
+
+    #social-links {
+        padding-bottom: 1em;
+    }
+
+    .navbar {
+        border-bottom: 2px solid black;
+    }
+
+    .nav-btns {
+        margin: 0 5% 2% 5%;
+        background: white;
+        font-size: 16px;
+        height: 40px;
+        width: 80px;
+        cursor: pointer;
+    }
+
+    .nav-btns:hover {
+        box-shadow: 4px 4px 4px 0 gray;
+    }
+    
+    #projects-content,
+    #art-content,
+    #resume-content
+    {
+        display: none;
+    }
+    
+    #intro-btn {
+        background: darkmagenta;
+        color: white;
+    }
+    
+    .content-container {
+        padding: 0 5% 5% 5%;
+        text-align: left;
+    }
 
 }
 
-.left-column {
-    /*background-color: brown;*/
-    float: left;
-    width: 30%;
+
+@media screen and (min-width: 1024px) {
+    /* large screens */
+    body {
+        padding: 30px;
+    }
+    
+    .container {
+        /*background-color: bisque;*/
+        width: 800px;
+        height: 800px;
+    }
+    
+    .left-column {
+        /*background-color: brown;*/
+        float: left;
+        width: 30%;
+    }
+    
+    .headshot {
+        margin: 30% 0 0 8%;
+        border-radius: 50%;
+    }
+    
+    h1, .self-title {
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    
+    .self-title {
+        font-size: 20px;
+        margin-bottom: 40px;
+    }
+    
+    .link-container {
+        margin-left: 40%;
+        margin-bottom: 10px;
+    }
+    .right-column {
+        /*background-color: lightskyblue;*/
+        float: right;
+        width: 70%;
+        height: 100%;
+    }
+    
+    .navbar {
+        border-bottom: 2px solid black;
+    }
+    
+    .nav-btns {
+        margin: 20px 20px 16px 20px;
+        background: white;
+        font-size: 16px;
+        height: 50px;
+        width: 90px;
+        cursor: pointer;
+    }
+    
+    .nav-btns:hover {
+        box-shadow: 4px 4px 4px 0 gray;
+    }
+    
+    #projects-content,
+    #art-content,
+    #resume-content
+    {
+        display: none;
+    }
+    
+    #intro-btn {
+        background: darkmagenta;
+        color: white;
+    }
+    
+    .content-container {
+        padding-left: 15px;
+    }
 }
 
-.headshot {
-    margin: 30% 0 0 8%;
-    border-radius: 50%;
-}
-
-h1, .self-title {
-    font-size: 30px;
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-.self-title {
-    font-size: 20px;
-    margin-bottom: 40px;
-}
-
-.link-container {
-    margin-left: 40%;
-    margin-bottom: 10px;
-}
-.right-column {
-    /*background-color: lightskyblue;*/
-    float: right;
-    width: 70%;
-    height: 100%;
-}
-
-.navbar {
-    border-bottom: 2px solid black;
-}
-
-.nav-btns {
-    margin: 20px 20px 16px 20px;
-    background: white;
-    font-size: 16px;
-    height: 50px;
-    width: 90px;
-    cursor: pointer;
-}
-
-.nav-btns:hover {
-    box-shadow: 4px 4px 4px 0 gray;
-}
-
-#projects-content,
-#art-content,
-#resume-content
-{
-    display: none;
-}
-
-#intro-btn {
-    background: darkmagenta;
-    color: white;
-}
-
-.content-container {
-    padding-left: 15px;
-}
 
 
 
